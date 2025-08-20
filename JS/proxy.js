@@ -17,7 +17,8 @@ const advanceUser = {
 
 const proxyAdvanceUser = new Proxy(advanceUser, {
 
-    get(target, p) {
+    get(target, p, receiver) { //! Read this reciver 
+
         const index = Number(p)
         if (p < 0 ) return target[target.length + index] 
         return target[p]
@@ -40,7 +41,7 @@ const proxyAdvanceUser = new Proxy(advanceUser, {
 //         console.log("changed")
 // }
 
-// proxyAdvanceUser.greet()
+proxyAdvanceUser.greet()
 
 
 

@@ -1,0 +1,40 @@
+# Node modules
+node_modules
+
+# Build output
+dist
+build
+.next
+out
+
+# Logs
+logs
+*.log
+
+# Coverage reports
+coverage
+
+# Environment variables
+.env
+.env.* 
+
+# Public files (static)
+public
+
+# Version control
+.git
+.gitignore
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# OS / IDE files
+.DS_Store
+.vscode
+.idea
+
+# Misc
+*.min.js
+*.min.css
